@@ -19,8 +19,12 @@ public class SQLConnection {
     public static final String ITEMS_TABLE = "items";
     public static final String WORKERS_TABLE = "workers";
     public static final String REPORTS_TABLE = "reports";
-    public static final String ITEM_COLUM_NAMES = " (name, description, created_at, last_revised, revision_interval, location) ";
-    public static final String ITEM_COLUM_FORMAT = "(%s, %s, %s, %s, %d, %s)";
+    public static final String ITEM_COLUMN_NAMES = " (name, description, created_at, last_revised, revision_interval, location) ";
+    public static final String ITEM_COLUMN_FORMAT = "(%s, %s, %s, %s, %d, %s)";
+    public static final String WORKER_COLUMN_NAMES = " (full_name, company_name, phone, country_prefix, address, active) ";
+    public static final String WORKER_COLUMN_FORMAT = "(%s, %s, %d, %d, %s)";
+    public static final String REPORT_COLUMN_NAMES = " (item_id, worker_id, type, date, link) ";
+    public static final String REPORT_COLUMN_FORMAT = "(%d, %d, %s, %s, %s)";
 
     /**
      * Metoda pentru stabilire conexiune
