@@ -266,7 +266,7 @@ public class DatabaseFunctions {
     public int deleteReport(int index) {
         return deleteFromTable(index, SQLConnection.REPORTS_TABLE);
     }
-    
+
     public int deleteReportsOfItem(int id) {
         try {
             connection = SQLConnection.getConnection();
